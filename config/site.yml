@@ -1,0 +1,4 @@
+html_tags_allowed:
+  - h1
+  - h2
+  - h3

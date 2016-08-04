@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tag: MyString
+  content: MyText
+  parsed_site_id: 
+
+two:
+  tag: MyString
+  content: MyText
+  parsed_site_id: 

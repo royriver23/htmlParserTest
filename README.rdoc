@@ -1,4 +1,7 @@
 == README
 
 - Created by using `rails-api` gem since I am using Rails 4.
-- 
+
+```bash
+rails-api new html_parser --skip-sprockets
+```
