@@ -1,6 +1,6 @@
 require 'uri'
 class ParsedSite < ActiveRecord::Base
-  validates :url presence: true
+  validates :url, presence: true
   validate :valid_url
   has_many :url_html_tags
 
