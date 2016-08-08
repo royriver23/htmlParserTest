@@ -19,7 +19,6 @@ class ParsedSitesController < ApplicationController
   # POST /parsed_sites.json
   def create
     @parsed_site = ParsedSite.new(parsed_site_params)
-    HtmlParser.new(site).save_parsed_values
 
     if @parsed_site.save
       render json: @parsed_site, status: :created, location: @parsed_site

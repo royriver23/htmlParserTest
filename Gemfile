@@ -9,6 +9,9 @@ gem 'spring', :group => :development
 
 gem "active_model_serializers", github: "rails-api/active_model_serializers"
 
+gem 'watir-webdriver'
+
+gem 'headless'
 
 gem 'pg'
 
@@ -27,3 +30,4 @@ gem 'nokogiri'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+ruby '2.2.2'

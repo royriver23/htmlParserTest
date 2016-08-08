@@ -1,11 +1,18 @@
 require 'open-uri'
-class HtmlParser
+class HtmlUrlParser
   attr_accessor :site
   attr_reader :nokogiri_object
+
   def initialize(site)
     self.site = site
-    html_data = open(site).read
-    @nokogiri_object = Nokogiri::HTML(html_data)
+    @nokogiri_object = Nokogiri::HTML(visit_site.html)
+  end
+
+  def visit_site
+    sleep 2
+    browser = Watir::Browser.new :phantomjs, args: %w(--ignore-ssl-errors=true)
+    browser.goto(site.url)
+    browser
   end
 
   def save_parsed_values
@@ -25,7 +32,7 @@ class HtmlParser
   end
 
   def links
-    links = nokogiri_object.css('a').map {|link| link.attribute('href').to_s}.uniq.sort.select{|href| href.any?}
+    links = nokogiri_object.css('a').map {|link| link.attribute('href').to_s}.uniq.sort.select{|href| href.present?}
     links.reduce([]) do |memo, link|
       memo << {link: link, parsed_site: site}
       memo
