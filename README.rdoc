@@ -19,3 +19,9 @@ token-type:Bearer
 client:SXUActSwnJyPfXxwvHn7fw
 expiry:1472525025
 uid:roy.fita23@gmail.com
+
+Create Parsed Site:
+http://localhost:3000/parsed_sites?parsed_site[url]=yahoo.com&parsed_site[name]=Test Page
+
+List Sites:
+http://localhost:3000/parsed_sites

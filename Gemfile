@@ -24,6 +24,8 @@ gem 'pg'
 # Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser (http://nokogiri.org)
 gem 'nokogiri'
 
+gem 'pry-byebug'
+
 gem 'devise'
 
 # Simple, secure token based authentication for Rails. (https://github.com/lynndylanhurley/devise_token_auth)
