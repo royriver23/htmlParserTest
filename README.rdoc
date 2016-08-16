@@ -5,3 +5,8 @@
 ```bash
 rails-api new html_parser --skip-sprockets
 ```
+
+
+Create users
+POST http://localhost:3000/auth?email=roy.fita23@gmail.com&password=RiveZa23&password_confirmation=RiveZa23&confirm_success_url=localhost:3000&name=Roy&nickname=royriver23&image=https://s-media-cache-ak0.pinimg.com/736x/dc/ef/3a/dcef3abedf0e0761203aaeb85886a6f3.jpg
+

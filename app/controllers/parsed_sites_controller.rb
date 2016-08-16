@@ -1,5 +1,6 @@
 class ParsedSitesController < ApplicationController
   before_action :set_parsed_site, only: [:show, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /parsed_sites
   # GET /parsed_sites.json
