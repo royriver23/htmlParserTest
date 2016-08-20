@@ -2,26 +2,33 @@
 
 - Created by using `rails-api` gem since I am using Rails 4.
 
-```bash
-rails-api new html_parser --skip-sprockets
-```
+- rails-api new html_parser --skip-sprockets
 
 
-Sign Up (POST)
-http://localhost:3000/auth?email=roy.fita23@gmail.com&password=QZpm2389&password_confirmation=QZpm2389&name=test
+## Sign Up (POST)
+- http://localhost:3000/auth?email=roy.fita23@gmail.com&password=QZpm2389&password_confirmation=QZpm2389&name=test
 
-Sign In (POST)
-http://localhost:3000/auth/sign_in?email=roy.fita23@gmail.com&password=QZpm2389
+## Sign In (POST)
+- http://localhost:3000/auth/sign_in?email=roy.fita23@gmail.com&password=QZpm2389
 
-Visit any site by writing headers with this format:
-access-token:g_CPM8up4MjWuGhce1L4Nw
-token-type:Bearer
-client:SXUActSwnJyPfXxwvHn7fw
-expiry:1472525025
-uid:roy.fita23@gmail.com
+### Visit any site by writing headers with this format:
 
-Create Parsed Site:
-http://localhost:3000/parsed_sites?parsed_site[url]=yahoo.com&parsed_site[name]=Test Page
+- access-token:g_CPM8up4MjWuGhce1L4Nw
+- token-type:Bearer
+- client:SXUActSwnJyPfXxwvHn7fw
+- expiry:1472525025
+- uid:roy.fita23@gmail.com
 
-List Sites:
-http://localhost:3000/parsed_sites
+## Create Parsed Site:
+
+http://localhost:3000/v1/parsed_sites?parsed_site[url]=yahoo.com&parsed_site[name]=Test 
+Page
+
+## List Sites:
+
+- http://localhost:3000/parsed_sites
+
+
+## URL
+
+- http://api.html_parser.dev/
